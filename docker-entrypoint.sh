@@ -28,7 +28,7 @@ fi
 # Configure .env to connect to Docker services
 echo "Updating .env configuration for Docker services..."
 set_env "DB_CONNECTION" "mysql"
-set_env "DB_HOST" "db"
+set_env "DB_HOST" "mysql"  # Matched to the 'mysql' service name in docker-compose.yml
 set_env "DB_PORT" "3306"
 set_env "DB_DATABASE" "laravel"
 set_env "DB_USERNAME" "sail"
